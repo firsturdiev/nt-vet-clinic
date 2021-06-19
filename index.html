@@ -114,15 +114,15 @@
 
     <section class="quotes">
       <div class="container quotes__container">
-          <div class="quotes__text">
-            <blockquote class="quote">
-              <p class="quote__text">Наша ветеринарная клиника готова уделить максимум внимания Вам и Вашему питамцу.
-                Здоровье и благополучие Ваших животных очень важно для нас и мы стремимся оказать наилучшую возможную
-                ветеринарную помощь.</p>
-            </blockquote>
+        <div class="quotes__text">
+          <blockquote class="quote">
+            <p class="quote__text">Наша ветеринарная клиника готова уделить максимум внимания Вам и Вашему питамцу.
+              Здоровье и благополучие Ваших животных очень важно для нас и мы стремимся оказать наилучшую возможную
+              ветеринарную помощь.</p>
+          </blockquote>
 
-            <strong class="quotes__author">Оржоникидзевская Ветеринарная клиника</strong>
-          </div>
+          <strong class="quotes__author">Оржоникидзевская Ветеринарная клиника</strong>
+        </div>
       </div>
     </section>
 
@@ -130,7 +130,133 @@
     <!-- SERVICES -->
 
     <section class="services">
-      
+      <div class="container">
+        <h2 class="services__heading heading heading--secondary">Наши услуги</h2>
+
+        <div class="services-slider">
+          <button class="services-slider__button services-slider__button--left" type="button"
+            aria-label="Slide to left"></button>
+
+          <ul class="services-slider__list">
+            <li class="services-slider__item services-slider__item--1 services-slider__item--active">
+              <a class="services-slider__link" href="#">
+                <h3 class="services-slider__heading">Первичный осмотр</h3>
+              </a>
+            </li>
+
+            <li class="services-slider__item services-slider__item--2">
+              <a class="services-slider__link" href="#">
+                <h3 class="services-slider__heading">Первичный осмотр</h3>
+              </a>
+            </li>
+
+            <li class="services-slider__item services-slider__item--3">
+              <a class="services-slider__link" href="#">
+                <h3 class="services-slider__heading">Хирургическое вмешательство</h3>
+              </a>
+            </li>
+
+            <li class="services-slider__item services-slider__item--4">
+              <a class="services-slider__link" href="#">
+                <h3 class="services-slider__heading">Дерматология</h3>
+              </a>
+            </li>
+
+            <li class="services-slider__item services-slider__item--5">
+              <a class="services-slider__link" href="#">
+                <h3 class="services-slider__heading">Лабораторная диагностика</h3>
+              </a>
+            </li>
+
+            <li class="services-slider__item services-slider__item--6">
+              <a class="services-slider__link" href="#">
+                <h3 class="services-slider__heading">Офтальмология</h3>
+              </a>
+            </li>
+
+            <li class="services-slider__item services-slider__item--7">
+              <a class="services-slider__link" href="#">
+                <h3 class="services-slider__heading">УЗИ диагностика</h3>
+              </a>
+            </li>
+
+            <li class="services-slider__item services-slider__item--8">
+              <a class="services-slider__link" href="#">
+                <h3 class="services-slider__heading">Чипирование</h3>
+              </a>
+            </li>
+
+            <li class="services-slider__item services-slider__item--9">
+              <a class="services-slider__link" href="#">
+                <h3 class="services-slider__heading">Международные паспорта</h3>
+              </a>
+            </li>
+
+            <li class="services-slider__item services-slider__item--10">
+              <a class="services-slider__link" href="#">
+                <h3 class="services-slider__heading">Вакцинация</h3>
+              </a>
+            </li>
+
+            <li class="services-slider__item services-slider__item--11">
+              <a class="services-slider__link" href="#">
+                <h3 class="services-slider__heading">Стоматология</h3>
+              </a>
+            </li>
+
+            <li class="services-slider__item services-slider__item--12">
+              <a class="services-slider__link" href="#">
+                <h3 class="services-slider__heading">Вызов на дом</h3>
+              </a>
+            </li>
+          </ul>
+
+          <button class="services-slider__button services-slider__button--right" type="button"
+            aria-label="Slide to right"></button>
+        </div>
+
+        <ul class="services__list">
+          <li class="services__item service">
+            <img class="service__photo" src="./img/bg-service.jpg" width="524" height="329" alt="Service photo">
+
+            <div class="service__info">
+              <h3 class="service__title heading heading--tertiary">Первичный осмотр</h3>
+              <div class="service__text">
+                <p class="service__paragraph">По условиям акции в нашей клинике предоставляетса безплатная услуга
+                  “Дневной
+                  стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
+                <p class="service__paragraph">По условиям акции в нашей клинике предоставляетса безплатная услуга
+                  “Дневной
+                  стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
+              </div>
+
+              <ul class="service__actions">
+                <li class="service__actions-item">
+                  <a class="service__btn service__btn--money btn btn--light" href="#">Узнать цену</a>
+                </li>
+                <li class="service__actions-item">
+                  <a class="service__btn service__btn--doc btn btn--dark" href="#">Записаться на приём</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="subscribe">
+      <div class="container">
+        <div class="subscribe__inner">
+          <h2 class="heading heading--secondary">Будь в курсе событий</h2>
+
+          <form class="subscribe__form" action="https://echo.htmlacademy.ru">
+            <input class="subscribe__input" type="email" placeholder="Укажите Ваш email адрес" name="email"
+              aria-label="Email address">
+            <button class="btn btn--dark" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
