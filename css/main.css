@@ -484,7 +484,7 @@
   text-align: center;
   text-decoration: none;
   color: var(--color-text-primary);
-  
+
   background-color: #fff;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
@@ -634,22 +634,20 @@
   padding-left: 222px;
   border-radius: 5px;
   background: url("../img/bg-subscribe.svg") no-repeat center / cover;
-  overflow-x: hidden;
 }
 
 .subscribe__inner {
   position: relative;
-  z-index: 1;
 }
 
 .subscribe__inner::after {
   content: "";
   position: absolute;
-  bottom: -114px;
-  right: 114px;
+  bottom: -152px;
+  right: 190px;
   width: 613px;
   height: 481px;
-  background: url("../img/bg-subscribe-puppy.png") no-repeat center / contain;
+  background: url(../img/bg-subscribe-puppy.png) no-repeat center / contain;
 }
 
 .subscribe__heading {
@@ -664,7 +662,6 @@
 
 .subscribe__input {
   width: 335px;
-  margin: 21px;
   padding: 15px 22px;
   color: var(--color-text-primary);
   background-color: #fff;
@@ -672,6 +669,10 @@
   border-radius: 5px;
   outline: none;
   transition: border-color 0.3s ease;
+}
+
+.subscribe__input:first-child {
+  margin-right: 21px;
 }
 
 .subscribe__input:not(:focus):not(:placeholder-shown):invalid {
@@ -722,7 +723,6 @@
 
 .article__poster {
   width: 305px;
-  height: 180px;
   object-fit: cover;
 }
 
@@ -834,10 +834,6 @@
   flex-grow: 1;
 }
 
-.article--active .article__poster {
-  height: 435px;
-}
-
 .article--active .article__tags-list {
   display: flex;
 }
@@ -888,8 +884,8 @@
   background-image: url(../img/form-bg.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-position-x: 100%;
-  background-size: 120%;
+  background-position-x: 95%;
+  background-size: 135%;
 }
 
 .contact__heading {
