@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -20,17 +20,17 @@
         <div class="phones">
           <ul class="phones__list">
             <li class="phones__item">
-              <a class="phones__link" href="tel:(067) 634 -75 - 74" aria-label="Call to phone number">(067) 634 -75 -
+              <a class="phones__link" href="tel:(067)634-75-74" aria-label="Call to phone number">(067) 634 -75 -
                 74</a>
             </li>
 
             <li class="phones__item">
-              <a class="phones__link" href="tel:(0637) 57 - 01 - 31" aria-label="Call to phone number">(0637) 57 - 01 -
+              <a class="phones__link" href="tel:(0637)57-01-31" aria-label="Call to phone number">(0637) 57 - 01 -
                 31</a>
             </li>
 
             <li class="phones__item">
-              <a class="phones__link" href="tel:(098) 266 - 43 - 89" aria-label="Call to phone number">(098) 266 - 43 -
+              <a class="phones__link" href="tel:(098)266-43-89" aria-label="Call to phone number">(098) 266 - 43 -
                 89</a>
             </li>
           </ul>
@@ -38,8 +38,8 @@
 
         <div class="working-times">
           <ul class="working-time__list">
-            <li class="working-time__item" aria-label="Working times">Пн - Пт 8:00 - 18:00</li>
-            <li class="working-time__item" aria-label="Working times">Сб - Вс 8:00 - 14:00</li>
+            <li class="working-time__item">Пн - Пт 8:00 - 18:00</li>
+            <li class="working-time__item">Сб - Вс 8:00 - 14:00</li>
           </ul>
         </div>
       </div>
@@ -114,6 +114,8 @@
 
     <section class="quotes">
       <div class="container quotes__container">
+        <h2 class="visually-hidden">Quotes</h2>
+
         <div class="quotes__text">
           <blockquote class="quote">
             <p class="quote__text">Наша ветеринарная клиника готова уделить максимум внимания Вам и Вашему питамцу.
@@ -245,16 +247,159 @@
     </section>
 
 
+    <!-- SUBSCRIBE -->
+
     <section class="subscribe">
       <div class="container">
         <div class="subscribe__inner">
-          <h2 class="heading heading--secondary">Будь в курсе событий</h2>
+          <h2 class="subscribe__heading heading heading--secondary">Будь в курсе событий</h2>
 
-          <form class="subscribe__form" action="https://echo.htmlacademy.ru">
-            <input class="subscribe__input" type="email" placeholder="Укажите Ваш email адрес" name="email"
-              aria-label="Email address">
+          <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="POST">
+            <input class="subscribe__input" type="email" placeholder="Укажите Ваш email адрес"
+              pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" name="email" aria-label="Email address"
+              required>
             <button class="btn btn--dark" type="submit">Подписаться</button>
           </form>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ARTICLES -->
+
+    <section class="articles">
+      <div class="container">
+        <div class="articles__inner">
+          <h2 class="articles__heading heading heading--secondary">Полезные статьи</h2>
+
+          <div class="articles__list">
+            <article class="articles__item article">
+              <img class="article__poster" src="./img/article-1.jpg" alt="Article poster">
+
+              <div class="article__info">
+                <header class="article__top">
+                  <ul class="article__tags-list">
+                    <li class="article__tags-item">
+                      <a class="article__tag" href="#">#собака</a>
+                    </li>
+
+                    <li class="article__tags-item">
+                      <a class="article__tag" href="#">#дом</a>
+                    </li>
+
+                    <li class="article__tags-item">
+                      <a class="article__tag" href="#">#уход</a>
+                    </li>
+                  </ul>
+
+                  <time class="article__date" datetime="2020-08-28">28.08.2020</time>
+                </header>
+
+                <h3 class="article__heading heading heading--tertiary">Ультразвуковая чистка зубов</h3>
+                <p class="article__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот
+                  пушистый зверек берется от ...</p>
+
+                <div class="article__link-wrapper">
+                  <a class="article__link" href="#">Читать больше</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="articles__item article article--active">
+              <img class="article__poster" src="./img/article-2.jpg" alt="Article poster">
+
+              <div class="article__info">
+                <header class="article__top">
+                  <ul class="article__tags-list">
+                    <li class="article__tags-item">
+                      <a class="article__tag" href="#">#собака</a>
+                    </li>
+
+                    <li class="article__tags-item">
+                      <a class="article__tag" href="#">#дом</a>
+                    </li>
+
+                    <li class="article__tags-item">
+                      <a class="article__tag" href="#">#уход</a>
+                    </li>
+                  </ul>
+
+                  <time class="article__date" datetime="2020-08-29">29.08.2020</time>
+                </header>
+
+                <h3 class="article__heading heading heading--tertiary">Перед тем как завести собаку</h3>
+                <p class="article__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот
+                  пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему
+                  теплый дом. И первым вопросом, который возникает у новых хозяев – как определить возраст котенка.
+                  Появление в доме котенка приятное и радосное событие.</p>
+
+                <div class="article__link-wrapper">
+                  <a class="article__link" href="#">Читать больше</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="articles__item article">
+              <img class="article__poster" src="./img/article-3.jpg" alt="Article poster">
+
+              <div class="article__info">
+                <header class="article__top">
+                  <ul class="article__tags-list">
+                    <li class="article__tags-item">
+                      <a class="article__tag" href="#">#собака</a>
+                    </li>
+
+                    <li class="article__tags-item">
+                      <a class="article__tag" href="#">#дом</a>
+                    </li>
+
+                    <li class="article__tags-item">
+                      <a class="article__tag" href="#">#уход</a>
+                    </li>
+                  </ul>
+
+                  <time class="article__date" datetime="2020-07-21">21.07.2020</time>
+                </header>
+
+                <h3 class="article__heading heading heading--tertiary">Когда привавать питомца?</h3>
+                <p class="article__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот
+                  пушистый зверек берется от ...</p>
+
+
+                <div class="article__link-wrapper">
+                  <a class="article__link" href="#">Читать больше</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <iframe class="contact__map" src="https://yandex.com/map-widget/v1/-/CCUeMKvHkC" allowfullscreen></iframe>
+
+          <div class="contact__wrapper">
+            <h2 class="contact__heading heading heading--secondary">Обратная связь</h2>
+            <p class="contact__text">При возникновении вопросов по поводу работы клиники или консультаций, заполните
+              форму ниже:</p>
+
+            <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
+              <input class="contact__form-input" placeholder="Ваше имя" type="text" name="fullname"
+                aria-label="Full name" required>
+              <input class="contact__form-input" placeholder="Email для обратной связи" type="email" name="email"
+                aria-label="Email address" required>
+              <textarea class="contact__form-input"
+                placeholder="Опишите Ваш вопрос. Например: в каком возрасте можно прививать от бешенства?"
+                name="question" minlength="3" aria-label="Question" required></textarea>
+              <button class="contact__form-button btn btn--light" type="submit">Задать нам вопрос</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -265,7 +410,74 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="site-footer__inner"></div>
+      <div class="site-footer__inner">
+        <div class="logo-wrapper footer__logo-wrapper">
+          <a class="logo" href="./">
+            <img src="./img/logo.svg" width="178" height="87" alt="Vet Clinic logo">
+          </a>
+        </div>
+
+        <div class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item footer-nav__item--active">
+              <a class="footer-nav__link" href="./">Главная</a>
+            </li>
+
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">О Клинике</a>
+            </li>
+
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Наши Услуги</a>
+            </li>
+          </ul>
+
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Полезные Статьи</a>
+            </li>
+
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">FAQ</a>
+            </li>
+
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="working-times footer__working-times">
+          <ul class="working-time__list">
+            <li class="working-time__item">Пн - Пт 8:00 - 18:00</li>
+            <li class="working-time__item">Сб - Вс 8:00 - 14:00</li>
+          </ul>
+        </div>
+
+        <address class="address footer__address">г. Мариуполь, проспект Победы, 48а</address>
+
+        <div class="phones footer__phones">
+          <ul class="phones__list">
+            <li class="phones__item">
+              <a class="phones__link" href="tel:(067)634-75-74" aria-label="Call to phone number">(067) 634 -75 -
+                74</a>
+            </li>
+
+            <li class="phones__item">
+              <a class="phones__link" href="tel:(0637)57-01-31" aria-label="Call to phone number">(0637) 57 - 01 -
+                31</a>
+            </li>
+
+            <li class="phones__item">
+              <a class="phones__link" href="tel:(098)266-43-89" aria-label="Call to phone number">(098) 266 - 43 -
+                89</a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="copyright">© 2020 example. All Rights Reserved.</p>
+      </div>
     </div>
   </footer>
 </body>
