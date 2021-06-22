@@ -12,14 +12,14 @@
 }
 
 .service-hero__inner::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -144px;
   right: 0;
   z-index: -1;
   width: 435px;
   height: 435px;
-  background: url('../img/bg-services-hero.png') no-repeat center / contain;
+  background: url("../img/bg-services-hero.png") no-repeat center / contain;
 }
 
 .services-hero__text {
@@ -31,6 +31,10 @@
 }
 
 /* SERVICES-GRID */
+
+.services-grid {
+  padding-bottom: 170px;
+}
 
 .services-grid__list {
   display: flex;
@@ -51,13 +55,13 @@
   padding-top: 58px;
   padding-bottom: 45px;
   background-color: #fff;
-  background-image: url('../img/bg-service-pet.svg');
+  background-image: url("../img/bg-service-pet.svg");
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 143px 138px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  transition: box-shadow .5s ease;
+  transition: box-shadow 0.5s ease;
 }
 
 .service:hover {
@@ -65,7 +69,7 @@
 }
 
 .service::before {
-  content: '';
+  content: "";
   width: 87px;
   height: 78px;
   margin-bottom: 21px;
@@ -91,7 +95,8 @@
   color: #fff;
   background-color: var(--service-bg);
   border-radius: 3px;
-  transition: background-color .3s ease;
+  transition: 0.3s ease;
+  transition-property: background-color, opacity;
 }
 
 .services-grid__item:nth-child(odd) .service__link {
@@ -106,52 +111,56 @@
   background-color: #000;
 }
 
+.service__link:active {
+  opacity: 0.6;
+}
+
 /* DECORATIONS */
 
 .services-grid__item--male::before {
-  background-image: url('../img/service-1.png');
+  background-image: url("../img/service-1.png");
 }
 
 .services-grid__item--female::before {
-  background-image: url('../img/service-2.png');
+  background-image: url("../img/service-2.png");
 }
 
 .services-grid__item--surgical::before {
-  background-image: url('../img/service-3.png');
+  background-image: url("../img/service-3.png");
 }
 
 .services-grid__item--dermatology::before {
-  background-image: url('../img/service-4.png');
+  background-image: url("../img/service-4.png");
 }
 
 .services-grid__item--laboratory::before {
-  background-image: url('../img/service-5.png');
+  background-image: url("../img/service-5.png");
 }
 
 .services-grid__item--oculist::before {
-  background-image: url('../img/service-6.png');
+  background-image: url("../img/service-6.png");
 }
 
 .services-grid__item--uzi-diagnostics::before {
-  background-image: url('../img/service-7.png');
+  background-image: url("../img/service-7.png");
 }
 
 .services-grid__item--chipping::before {
-  background-image: url('../img/service-8.png');
+  background-image: url("../img/service-8.png");
 }
 
 .services-grid__item--passport::before {
-  background-image: url('../img/service-9.png');
+  background-image: url("../img/service-9.png");
 }
 
 .services-grid__item--vaccination::before {
-  background-image: url('../img/service-10.png');
+  background-image: url("../img/service-10.png");
 }
 
 .services-grid__item--dental::before {
-  background-image: url('../img/service-11.png');
+  background-image: url("../img/service-11.png");
 }
 
 .services-grid__item--call::before {
-  background-image: url('../img/service-12.png');
+  background-image: url("../img/service-12.png");
 }
