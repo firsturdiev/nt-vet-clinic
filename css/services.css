@@ -1,0 +1,157 @@
+/* SERVICES-HERO */
+
+.services-hero {
+  padding-top: 110px;
+  padding-bottom: 140px;
+}
+
+.service-hero__inner {
+  position: relative;
+  z-index: 1;
+  padding-left: 112px;
+}
+
+.service-hero__inner::after {
+  content: '';
+  position: absolute;
+  top: -144px;
+  right: 0;
+  z-index: -1;
+  width: 435px;
+  height: 435px;
+  background: url('../img/bg-services-hero.png') no-repeat center / contain;
+}
+
+.services-hero__text {
+  max-width: 447px;
+}
+
+.services-hero__heading {
+  margin-bottom: 21px;
+}
+
+/* SERVICES-GRID */
+
+.services-grid__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 305px;
+  padding-left: 53px;
+  padding-right: 22px;
+  padding-top: 58px;
+  padding-bottom: 45px;
+  background-color: #fff;
+  background-image: url('../img/bg-service-pet.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 143px 138px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: box-shadow .5s ease;
+}
+
+.service:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service::before {
+  content: '';
+  width: 87px;
+  height: 78px;
+  margin-bottom: 21px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.service__title {
+  margin-bottom: 14px;
+}
+
+.service__info {
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+
+.service__link {
+  --service-bg: #ffdb54;
+  display: inline-block;
+  margin-top: auto;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--service-bg);
+  border-radius: 3px;
+  transition: background-color .3s ease;
+}
+
+.services-grid__item:nth-child(odd) .service__link {
+  --service-bg: #ffbd54;
+}
+
+.services-grid__item:nth-child(even) .service__link {
+  --service-bg: #78c0de;
+}
+
+.service__link:hover {
+  background-color: #000;
+}
+
+/* DECORATIONS */
+
+.services-grid__item--male::before {
+  background-image: url('../img/service-1.png');
+}
+
+.services-grid__item--female::before {
+  background-image: url('../img/service-2.png');
+}
+
+.services-grid__item--surgical::before {
+  background-image: url('../img/service-3.png');
+}
+
+.services-grid__item--dermatology::before {
+  background-image: url('../img/service-4.png');
+}
+
+.services-grid__item--laboratory::before {
+  background-image: url('../img/service-5.png');
+}
+
+.services-grid__item--oculist::before {
+  background-image: url('../img/service-6.png');
+}
+
+.services-grid__item--uzi-diagnostics::before {
+  background-image: url('../img/service-7.png');
+}
+
+.services-grid__item--chipping::before {
+  background-image: url('../img/service-8.png');
+}
+
+.services-grid__item--passport::before {
+  background-image: url('../img/service-9.png');
+}
+
+.services-grid__item--vaccination::before {
+  background-image: url('../img/service-10.png');
+}
+
+.services-grid__item--dental::before {
+  background-image: url('../img/service-11.png');
+}
+
+.services-grid__item--call::before {
+  background-image: url('../img/service-12.png');
+}

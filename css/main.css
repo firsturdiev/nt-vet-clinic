@@ -7,7 +7,7 @@
 }
 
 .site-header__top {
-  padding: 13px 0;
+  padding: 10px 0;
   padding-left: 193px;
   font-weight: 500;
   font-size: 14px;
@@ -15,6 +15,10 @@
   white-space: nowrap;
   color: var(--color-text-primary);
   background-color: #f9f9ff;
+}
+
+.site-header__top .site-header__container {
+  max-width: 1117px;
 }
 
 .address {
@@ -51,16 +55,24 @@
   list-style: none;
 }
 
-.phones__item {
+.phones__list {
+  flex-direction: column;
+}
+
+.phones--horizontal .phones__list {
+  flex-direction: row;
+}
+
+.phones--horizontal .phones__item {
   display: flex;
   align-items: center;
 }
 
-.phones__item:not(:last-child) {
+.phones--horizontal .phones__item:not(:last-child) {
   margin-right: 9px;
 }
 
-.phones__item:not(:last-child)::after {
+.phones--horizontal .phones__item:not(:last-child)::after {
   content: "";
   margin-left: 9px;
   width: 4px;
@@ -87,6 +99,14 @@
   align-items: center;
 }
 
+.working-time__list {
+  flex-direction: column;
+}
+
+.working-times--horizontal .working-time__list {
+  flex-direction: row;
+}
+
 .working-times::before {
   content: "";
   margin-right: 9px;
@@ -103,6 +123,8 @@
 }
 
 .site-header__inner {
+  position: relative;
+  z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #fff;
@@ -202,12 +224,17 @@
   opacity: 0.6;
 }
 
-.question-link-wrapper {
+.question-link {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: var(--color-text-primary);
+  transition: opacity 0.3s ease;
 }
 
-.question-link-wrapper::before {
+.question-link::before {
   content: "";
   margin-right: 5px;
   width: 28px;
@@ -215,21 +242,13 @@
   background: url("../img/icon-pet.svg") no-repeat center / contain;
 }
 
-.question-link {
-  position: relative;
-  z-index: 1;
-  text-decoration: none;
-  color: var(--color-text-primary);
-  transition: opacity 0.3s ease;
-}
-
 .question-link::after {
   content: "";
   position: absolute;
-  bottom: 4px;
-  left: 0;
+  bottom: 6.5px;
+  right: 0;
   z-index: -1;
-  width: 100%;
+  width: calc(100% - 33px);
   height: 4px;
   background-color: #f4ffad;
   opacity: 0;
@@ -928,6 +947,10 @@ textarea.contact__form-input {
   z-index: 1;
   padding-top: 54px;
   padding-bottom: 69px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-text-primary);
   background-color: #f3f3f3;
   border: 1px solid #ebebeb;
 }
@@ -992,36 +1015,11 @@ textarea.contact__form-input {
 
 .footer__working-times {
   margin-right: 112px;
-  width: 118px;
 }
 
 .footer__address {
   margin-right: 87px;
   max-width: 185px;
-}
-
-.footer__address,
-.footer__working-times,
-.footer__phones {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  color: var(--color-text-primary);
-}
-
-.footer__address::before,
-.footer__working-times::before,
-.footer__phones::before {
-  align-self: flex-start;
-  flex-shrink: 0;
-}
-
-.footer__phones .phones__list {
-  flex-direction: column;
-}
-
-.footer__phones .phones__item::after {
-  display: none;
 }
 
 .copyright {
