@@ -89,6 +89,7 @@ body {
   color: var(--color-text-secondary);
   background-color: #f9f9f9;
   background-image: url('../img/bg-body.svg');
+  overflow-x: hidden;
 }
 
 img {

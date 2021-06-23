@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задать вопрос</title>
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/modules.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- MODAL -->
+  
+  <section class="modal modal--open">
+    <div class="modal__inner">
+      <div class="modal__content">
+        <div class="modal__login">
+          <h3 class="modal__login-heading heading heading--tertiary">Авторизация:</h3>
+
+          <ul class="modal__login-list">
+            <li class="modal__login-item">
+              <a class="modal__login-link modal__login-link--google" href="#">Войти через Google</a>
+            </li>
+
+            <li class="modal__login-item">
+              <a class="modal__login-link modal__login-link--facebook" href="#">Войти через Facebook</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="modal__form">
+          <h2 class="modal__form-heading heading heading--secondary">Задать вопрос</h2>
+
+          <form class="modal__form-wrapper" action="https://echo.htmlacademy.ru" method="get">
+            <input class="modal__form-input" type="text" placeholder="Ваше имя" name="name" aria-label="Ваше имя" required>
+            <textarea class="modal__form-input" minlength="3" placeholder="Опишите Ваш вопрос." name="question"
+              aria-label="Опишите Ваш вопрос." required></textarea>
+            <button class="modal__form-btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vet Clinic</title>
-  <!-- <link rel="stylesheet" href="css/styles.min.css"> -->
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -16,7 +15,7 @@
   <header class="site-header">
     <div class="site-header__top">
       <div class="site-header__container container">
-        <address class="address">г. Мариуполь, проспект Победы, 48а</address>
+        <address class="address address--horizontal">г. Мариуполь, проспект Победы, 48а</address>
 
         <div class="phones phones--horizontal">
           <ul class="phones__list">
@@ -38,9 +37,9 @@
         </div>
 
         <div class="working-times working-times--horizontal">
-          <ul class="working-time__list">
-            <li class="working-time__item">Пн - Пт 8:00 - 18:00</li>
-            <li class="working-time__item">Сб - Вс 8:00 - 14:00</li>
+          <ul class="working-times__list">
+            <li class="working-times__item">Пн - Пт 8:00 - 18:00</li>
+            <li class="working-times__item">Сб - Вс 8:00 - 14:00</li>
           </ul>
         </div>
       </div>
@@ -82,9 +81,7 @@
           </ul>
         </nav>
 
-        <div class="question-link-wrapper">
-          <a class="question-link" href="#">Задать вопрос</a>
-        </div>
+        <a class="question-link modal-open" href="./question.html">Задать вопрос</a>
       </div>
     </div>
   </header>
@@ -383,7 +380,8 @@
     <section class="contact">
       <div class="container">
         <div class="contact__inner">
-          <iframe class="contact__map" src="https://yandex.com/map-widget/v1/-/CCUeMKvHkC" loading="lazy" allowfullscreen></iframe>
+          <iframe class="contact__map" src="https://yandex.com/map-widget/v1/-/CCUeMKvHkC" loading="lazy"
+            allowfullscreen></iframe>
 
           <div class="contact__wrapper">
             <h2 class="contact__heading heading heading--secondary">Обратная связь</h2>
@@ -399,6 +397,42 @@
                 placeholder="Опишите Ваш вопрос. Например: в каком возрасте можно прививать от бешенства?"
                 name="question" minlength="3" aria-label="Question" required></textarea>
               <button class="contact__form-button btn btn--light" type="submit">Задать нам вопрос</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- MODAL -->
+
+    <section class="modal">
+      <div class="modal__inner">
+        <button class="modal__close" id="modalClose" type="button" aria-label="Close modal"></button>
+
+        <div class="modal__content">
+          <div class="modal__login">
+            <h3 class="modal__login-heading heading heading--tertiary">Авторизация:</h3>
+
+            <ul class="modal__login-list">
+              <li class="modal__login-item">
+                <a class="modal__login-link modal__login-link--google" href="#">Войти через Google</a>
+              </li>
+
+              <li class="modal__login-item">
+                <a class="modal__login-link modal__login-link--facebook" href="#">Войти через Facebook</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="modal__form">
+            <h2 class="modal__form-heading heading heading--secondary">Задать вопрос</h2>
+
+            <form class="modal__form-wrapper" action="https://echo.htmlacademy.ru" method="get">
+              <input class="modal__form-input" type="text" placeholder="Ваше имя" name="name" aria-label="Ваше имя" required>
+              <textarea class="modal__form-input" minlength="3" placeholder="Опишите Ваш вопрос." name="question"
+                aria-label="Опишите Ваш вопрос." required></textarea>
+              <button class="modal__form-btn" type="submit">Отправить</button>
             </form>
           </div>
         </div>
@@ -450,9 +484,9 @@
 
 
         <div class="working-times footer__working-times">
-          <ul class="working-time__list">
-            <li class="working-time__item">Пн - Пт 8:00 - 18:00</li>
-            <li class="working-time__item">Сб - Вс 8:00 - 14:00</li>
+          <ul class="working-times__list">
+            <li class="working-times__item">Пн - Пт 8:00 - 18:00</li>
+            <li class="working-times__item">Сб - Вс 8:00 - 14:00</li>
           </ul>
         </div>
 
@@ -481,6 +515,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
