@@ -36,6 +36,7 @@
   font-weight: 500;
   line-height: 21px;
   white-space: nowrap;
+  color: #fff;
   border: none;
   border-radius: 3px;
   cursor: pointer;
@@ -43,12 +44,10 @@
 }
 
 .btn--dark {
-  color: #fff;
   background-color: var(--color-text-primary);
 }
 
 .btn--light {
-  color: #fff;
   background-color: var(--color-orange);
 }
 

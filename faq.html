@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services Grid</title>
+  <title>FAQ</title>
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/faq.css">
 </head>
 
 <body>
@@ -83,7 +83,7 @@
           </ul>
         </nav>
 
-        <a class="question-link" href="#">Задать вопрос</a>
+        <a class="question-link modal-open" href="./question.html">Задать вопрос</a>
       </div>
     </div>
   </header>
@@ -91,7 +91,204 @@
 
   <!-- SITE-CONTENT -->
 
-  <main class="site-content"></main>
+  <main class="site-content">
+    <!-- FAQ-HERO -->
+
+    <section class="faq-hero">
+      <div class="container">
+        <div class="faq-hero__inner">
+          <div class="faq-hero__text">
+            <h1 class="faq-hero__heading heading heading--primary">FAQ</h1>
+            <p class="faq-hero__paragraph">Узнать информацию о наших услугах, записаться на прием к врачу или
+              проконсультироваться вы можете по телефону, в любое удобное для вас время.</p>
+            <a class="faq-hero__btn btn" href="#">Задать вопрос</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section class="faq">
+      <div class="container">
+        <h2 class="visually-hidden">FAQ</h2>
+
+        <ul class="faq__list">
+          <li class="faq__item accordion">
+            <header class="accordion__top">
+              <div class="accordion__col accordion__col--top">
+                <time class="accordion__date" datetime="2020-09-01">01.09.2020</time>
+                <p class="accordion__author">Пономаренко Наталия</p>
+              </div>
+
+              <div class="accordion__col accordion__col--bottom">
+                <h3 class="accordion__question heading">Как часто следует проводить обработки от блох и клещей?</h3>
+                <button class="accordion__toggle" type="button" role="toggle" aria-label="Accordion toggle"></button>
+              </div>
+            </header>
+
+            <div class="accordion__answer">
+              <p class="accordion__answer-text">Самые качественные капли от блох и клещей как правило действуют не более
+                одного месяца. Поэтому собак и кошек следует обрабатывать от блох именно с такой периодичностью.
+                Обработки противопаразитарными каплями особенно актуальны для собак в период с марта по декабрь, когда
+                активизируют свою активность клещи. Подобрать препарат от блох и клещей Вам помогут в ветеринарном
+                комплексе “Передовой”. Также здесь Вам помогут в расчёте дозировки этих препаратов.</p>
+            </div>
+          </li>
+
+          <li class="faq__item accordion">
+            <header class="accordion__top">
+              <div class="accordion__col accordion__col--top">
+                <time class="accordion__date" datetime="2020-09-01">01.09.2020</time>
+                <p class="accordion__author">Пономаренко Наталия</p>
+              </div>
+
+              <div class="accordion__col accordion__col--bottom">
+                <h3 class="accordion__question heading">Может ли кошка или собака никогда не выходящая из дома
+                  подхватить блох?</h3>
+                <button class="accordion__toggle" type="button" role="toggle" aria-label="Accordion toggle"></button>
+              </div>
+            </header>
+
+            <div class="accordion__answer">
+              <p class="accordion__answer-text">Самые качественные капли от блох и клещей как правило действуют не более
+                одного месяца. Поэтому собак и кошек следует обрабатывать от блох именно с такой периодичностью.
+                Обработки противопаразитарными каплями особенно актуальны для собак в период с марта по декабрь, когда
+                активизируют свою активность клещи. Подобрать препарат от блох и клещей Вам помогут в ветеринарном
+                комплексе “Передовой”. Также здесь Вам помогут в расчёте дозировки этих препаратов.</p>
+            </div>
+          </li>
+
+          <li class="faq__item accordion accordion--waiting">
+            <header class="accordion__top">
+              <div class="accordion__col accordion__col--top">
+                <time class="accordion__date" datetime="2020-09-01">01.09.2020</time>
+                <p class="accordion__author">Пономаренко Наталия</p>
+              </div>
+
+              <div class="accordion__col accordion__col--bottom">
+                <h3 class="accordion__question heading">Может ли кошка или собака никогда не выходящая из дома
+                  подхватить блох?</h3>
+                <button class="accordion__toggle" type="button" role="toggle" aria-label="Accordion toggle"></button>
+              </div>
+            </header>
+
+            <div class="accordion__answer">
+              <p class="accordion__answer-text">Самые качественные капли от блох и клещей как правило действуют не более
+                одного месяца. Поэтому собак и кошек следует обрабатывать от блох именно с такой периодичностью.
+                Обработки противопаразитарными каплями особенно актуальны для собак в период с марта по декабрь, когда
+                активизируют свою активность клещи. Подобрать препарат от блох и клещей Вам помогут в ветеринарном
+                комплексе “Передовой”. Также здесь Вам помогут в расчёте дозировки этих препаратов.</p>
+            </div>
+          </li>
+
+          <li class="faq__item accordion">
+            <header class="accordion__top">
+              <div class="accordion__col accordion__col--top">
+                <time class="accordion__date" datetime="2020-09-01">01.09.2020</time>
+                <p class="accordion__author">Пономаренко Наталия</p>
+              </div>
+
+              <div class="accordion__col accordion__col--bottom">
+                <h3 class="accordion__question heading">Чем очищать глаза собаке или кошке?</h3>
+                <button class="accordion__toggle" type="button" role="toggle" aria-label="Accordion toggle"></button>
+              </div>
+            </header>
+
+            <div class="accordion__answer">
+              <p class="accordion__answer-text">Самые качественные капли от блох и клещей как правило действуют не более
+                одного месяца. Поэтому собак и кошек следует обрабатывать от блох именно с такой периодичностью.
+                Обработки противопаразитарными каплями особенно актуальны для собак в период с марта по декабрь, когда
+                активизируют свою активность клещи. Подобрать препарат от блох и клещей Вам помогут в ветеринарном
+                комплексе “Передовой”. Также здесь Вам помогут в расчёте дозировки этих препаратов.</p>
+            </div>
+          </li>
+
+          <li class="faq__item accordion">
+            <header class="accordion__top">
+              <div class="accordion__col accordion__col--top">
+                <time class="accordion__date" datetime="2020-09-01">01.09.2020</time>
+                <p class="accordion__author">Пономаренко Наталия</p>
+              </div>
+
+              <div class="accordion__col accordion__col--bottom">
+                <h3 class="accordion__question heading">Чем лучше кормить – натуральным или готовым кормом?</h3>
+                <button class="accordion__toggle" type="button" role="toggle" aria-label="Accordion toggle"></button>
+              </div>
+            </header>
+
+            <div class="accordion__answer">
+              <p class="accordion__answer-text">Самые качественные капли от блох и клещей как правило действуют не более
+                одного месяца. Поэтому собак и кошек следует обрабатывать от блох именно с такой периодичностью.
+                Обработки противопаразитарными каплями особенно актуальны для собак в период с марта по декабрь, когда
+                активизируют свою активность клещи. Подобрать препарат от блох и клещей Вам помогут в ветеринарном
+                комплексе “Передовой”. Также здесь Вам помогут в расчёте дозировки этих препаратов.</p>
+            </div>
+          </li>
+
+          <li class="faq__item accordion accordion--waiting">
+            <header class="accordion__top">
+              <div class="accordion__col accordion__col--top">
+                <time class="accordion__date" datetime="2020-09-01">01.09.2020</time>
+                <p class="accordion__author">Пономаренко Наталия</p>
+              </div>
+
+              <div class="accordion__col accordion__col--bottom">
+                <h3 class="accordion__question heading">Зачем нужны витамины и в каком возрасте их нужно давать?</h3>
+                <button class="accordion__toggle" type="button" role="toggle" aria-label="Accordion toggle"></button>
+              </div>
+            </header>
+
+            <div class="accordion__answer">
+              <p class="accordion__answer-text">Самые качественные капли от блох и клещей как правило действуют не более
+                одного месяца. Поэтому собак и кошек следует обрабатывать от блох именно с такой периодичностью.
+                Обработки противопаразитарными каплями особенно актуальны для собак в период с марта по декабрь, когда
+                активизируют свою активность клещи. Подобрать препарат от блох и клещей Вам помогут в ветеринарном
+                комплексе “Передовой”. Также здесь Вам помогут в расчёте дозировки этих препаратов.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- MODAL -->
+
+    <section class="modal">
+      <div class="modal__inner">
+        <button class="modal__close" id="modalClose" type="button" aria-label="Close modal"></button>
+
+        <div class="modal__content">
+          <div class="modal__login">
+            <h3 class="modal__login-heading heading heading--tertiary">Авторизация:</h3>
+
+            <ul class="modal__login-list">
+              <li class="modal__login-item">
+                <a class="modal__login-link modal__login-link--google" href="#">Войти через Google</a>
+              </li>
+
+              <li class="modal__login-item">
+                <a class="modal__login-link modal__login-link--facebook" href="#">Войти через Facebook</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="modal__form">
+            <h2 class="modal__form-heading heading heading--secondary">Задать вопрос</h2>
+
+            <form class="modal__form-wrapper" action="https://echo.htmlacademy.ru" method="get">
+              <input class="modal__form-input" type="text" placeholder="Ваше имя" name="name" aria-label="Ваше имя"
+                required>
+              <textarea class="modal__form-input" minlength="3" placeholder="Опишите Ваш вопрос." name="question"
+                aria-label="Опишите Ваш вопрос." required></textarea>
+              <button class="modal__form-btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
 
   <!-- SITE-FOOTER -->
@@ -168,6 +365,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
